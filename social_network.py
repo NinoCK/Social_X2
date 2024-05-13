@@ -49,7 +49,6 @@ def calculate_engagement_rate(name):
         engagement_rate = 0
     return engagement_rate
 
-
 def calculate_highest_engagement_path(start, destination):
     """
     Calculates the path with the highest engagement in a social network graph.
@@ -230,7 +229,6 @@ def get_start_and_destination():
     destination = str(input("Enter the destination name: "))
     return start, destination
 
-# Display the shortest paths for follows
 def shortest_follow_path_display():
     """
     Finds the shortest path between two vertices in the followGraph and displays it.
@@ -367,8 +365,7 @@ def main_menu():
         elif choice == "3": engagement_rate_display()
         elif choice == "4": engagement_path_display()
         elif choice == "5": shortest_path_display()
-        elif choice == "0": 
-            break
+        elif choice == "0": break
         else: print("Invalid choice. Please try again.\n")
 
 def engagement_path_display():
@@ -417,5 +414,6 @@ def shortest_path_display():
 def main():
     generate_random_names()
     main_menu()
+
 if __name__ == "__main__":
     main()
